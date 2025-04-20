@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import "../assets/style.css";
+import qrCodeImage from "../assets/image-qr-code.png";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Frontend Mentor | QR code component</title>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <meta name="author" content="Cevdet Arda" />
+    </head>
+    <body>
+        <main>
+            <Image
+                src={qrCodeImage}
+                alt="QR Code image."
+                width={288}
+                height={288}
+            />
+            <div>
+                <h1>Improve your front-end skills by building projects</h1>
+                <p>
+                    Scan the QR code to visit Frontend Mentor and take your
+                    coding skills to the next level
+                </p>
+            </div>
+        </main>
+    </body>
+</html>
